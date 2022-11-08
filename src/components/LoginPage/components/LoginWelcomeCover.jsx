@@ -1,7 +1,6 @@
 import React from 'react'
 
 import "../login.css"
-import { LoginWelcomeCoverImg } from './images/SvgHandler'
 
 
 function LoginWelcomeCover() {
@@ -15,7 +14,7 @@ function LoginWelcomeCover() {
                 <p className='fs-2'>Etudes - Realisations Electriques et Automatisme</p>
             </div>
             <div className="w-100 image-container d-lg-flex align-items-center justify-content-center">
-                <LoginWelcomeCoverImg />
+                <img src={require('./images/login-v2.svg')} alt='cover login page' />
             </div>
         </div>
     )
