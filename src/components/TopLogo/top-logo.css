@@ -1,0 +1,18 @@
+.top-logo-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #132453;
+}
+
+.top-logo-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.top-logo-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
