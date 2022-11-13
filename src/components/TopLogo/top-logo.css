@@ -10,6 +10,28 @@
     font-size: 24px;
 }
 
+.top-logo-title-mobile {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.428571px;
+
+    color: #132453;
+}
+
+.top-logo-subtitle-mobile {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: #132453;
+}
+
+
+
 .top-logo-container {
     display: flex;
     justify-content: start;

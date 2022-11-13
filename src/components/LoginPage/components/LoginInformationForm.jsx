@@ -17,7 +17,7 @@ function LoginInformationForm() {
                 <CardTitle tag="h1" className="login-form-title mb-2">
                     Bienvenue sur ERELA!
                 </CardTitle>
-                <CardTitle tag="h2" className="fw-bold mb-3 login-form-subtitle">
+                <CardTitle tag="h2" className="mb-3 login-form-subtitle">
                     Merci de vous connecter à l’administration
                 </CardTitle>
             </div>
