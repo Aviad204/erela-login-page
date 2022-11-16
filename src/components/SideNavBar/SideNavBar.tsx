@@ -5,6 +5,12 @@ import "./SideNavBar.css"
 import 'antd/dist/antd.css';
 import TopLogo from '../TopLogo/TopLogo';
 
+// Images import
+import HomeImg from './images/home.svg'
+import AgentsImg from './images/agents.svg'
+import ClientsImg from './images/clients.svg'
+import DevisImg from './images/devis.svg'
+import FournisseursImg from './images/fournisseurs.svg'
 
 const { Sider } = Layout;
 
@@ -24,12 +30,14 @@ function getItem(
     }
 }
 
+
+
 const items: MenuItem[] = [
-    getItem('Tableau de bord', '1', <img src={require('./images/home.svg')} alt='Tableau de bord' />),
-    getItem('Agents', '2', <img src={require('./images/agents.svg')} alt='Agents' />),
-    getItem('Clients', '3', <img src={require('./images/clients.svg')} alt='Clients' />),
-    getItem('Devis', '4', <img src={require('./images/devis.svg')} alt='Devis' />),
-    getItem('Fournisseurs', '5', <img src={require('./images/fournisseurs.svg')} alt='Fournisseurs' />),
+    getItem('Tableau de bord', '1', <img src={HomeImg} alt='Tableau de bord' />),
+    getItem('Agents', '2', <img src={AgentsImg} alt='Agents' />),
+    getItem('Clients', '3', <img src={ClientsImg} alt='Clients' />),
+    getItem('Devis', '4', <img src={DevisImg} alt='Devis' />),
+    getItem('Fournisseurs', '5', <img src={FournisseursImg} alt='Fournisseurs' />),
 
 ];
 

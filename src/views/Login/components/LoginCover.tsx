@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import TopLogo from '../../../components/TopLogo/TopLogo'
-
+import LoginImg from './images/login-v2.svg'
 import "../Login.css"
 
 
@@ -12,7 +12,7 @@ const LoginWelcomeCover: FC = () => {
             </div>
 
             <div className="w-100 image-container d-lg-flex align-items-center justify-content-center pb-5">
-                <img src={require('./images/login-v2.svg')} alt='cover login page' />
+                <img src={LoginImg} alt='cover login page' />
             </div>
         </div>
     )
