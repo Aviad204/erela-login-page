@@ -5,6 +5,14 @@ import App from './App.tsx';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
+// ** React Perfect Scrollbar
+import 'react-perfect-scrollbar/dist/css/styles.css'
+
+// ** Core styles
+import './@core/scss/core.scss'
+import './assets/scss/style.scss'
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

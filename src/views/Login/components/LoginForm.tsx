@@ -7,6 +7,7 @@ import {
     Input,
     Button
 } from "reactstrap"
+import { stringStore } from '../../../stringStore'
 
 import "../Login.css"
 
@@ -15,10 +16,10 @@ const LoginForm: FC = () => {
         <Col className="px-xl-2 mx-auto" sm="8" md="6" lg="12">
             <div className='d-flex flex-column justify-content-start login-form-title-container'>
                 <CardTitle tag="h1" className="login-form-title mb-2">
-                    Bienvenue sur ERELA!
+                    {stringStore.login.formTitle}
                 </CardTitle>
                 <CardTitle tag="h2" className="mb-3 login-form-subtitle">
-                    Merci de vous connecter à l’administration
+                    {stringStore.login.formSubtitle}
                 </CardTitle>
             </div>
             <Form
@@ -27,7 +28,7 @@ const LoginForm: FC = () => {
             >
                 <div className="mb-3">
                     <Label className="form-label d-flex" for="login-email">
-                        Email
+                        {stringStore.userInformation.email}
                     </Label>
                     <Input
                         type="email"
@@ -39,10 +40,12 @@ const LoginForm: FC = () => {
                 <div className="mb-3">
                     <div className="d-flex justify-content-between ">
                         <Label className="form-label" for="login-password">
-                            Mot de passe
+                            {stringStore.userInformation.password}
                         </Label>
                         <a href="/forgot-password" className='text-decoration-none'>
-                            <small>Mot de passe oublie?</small>
+                            <small>
+                                {stringStore.login.forgotPassword}
+                            </small>
                         </a>
                     </div>
                     <Input
@@ -54,11 +57,11 @@ const LoginForm: FC = () => {
                 <div className="form-check mb-3">
                     <Input type="checkbox" id="remember-me" />
                     <Label className="form-check-label d-flex" for="remember-me">
-                        Se souvenit de moi
+                        {stringStore.login.rememberMe}
                     </Label>
                 </div>
                 <Button className='mt-4' color="primary" block>
-                    Connexion
+                    {stringStore.login.submit}
                 </Button>
             </Form>
         </Col>
