@@ -1,5 +1,5 @@
 import { LeftOutlined } from '@ant-design/icons'
-import React from 'react'
+import React, { FC } from 'react'
 import {
     Col,
     CardTitle,
@@ -9,9 +9,10 @@ import {
     Button
 } from "reactstrap"
 
-import "../forgot-password.css"
+import "../ForgotPassword.css"
+import "../../Login/Login.css"
 
-function ForgotPasswordInformationForm() {
+const ForgotPasswordForm: FC = () => {
     return (
         <Col className="px-xl-2 mx-auto" sm="8" md="6" lg="12">
             <div className='d-flex flex-column justify-content-start login-form-title-container'>
@@ -49,4 +50,4 @@ function ForgotPasswordInformationForm() {
     )
 }
 
-export default ForgotPasswordInformationForm
+export default ForgotPasswordForm

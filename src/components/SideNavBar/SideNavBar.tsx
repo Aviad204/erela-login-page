@@ -1,7 +1,7 @@
 import type { MenuProps } from 'antd';
 import { Layout, Menu } from 'antd';
-import React, { useState } from 'react';
-import "./side-bar.css"
+import React, { FC, useState } from 'react';
+import "./SideNavBar.css"
 import 'antd/dist/antd.css';
 import TopLogo from '../TopLogo/TopLogo';
 
@@ -34,7 +34,7 @@ const items: MenuItem[] = [
 ];
 
 
-function SideNavBar() {
+const SideNavBar: FC = () => {
     const [collapsed, setCollapsed] = useState(false);
 
     return (

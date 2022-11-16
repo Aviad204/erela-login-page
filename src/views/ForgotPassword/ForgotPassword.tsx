@@ -1,24 +1,24 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import {
   Row,
   Col
 } from "reactstrap"
 
-import LoginWelcomeCover from "./components/LoginWelcomeCover"
-import LoginInformationForm from "./components/LoginInformationForm"
-import TradeMarkCopyRights from '../TradeMarkCopyRights/TradeMarkCopyRights'
-import TopLogo from '../TopLogo/TopLogo'
-import isMobileChecker from '../../utils/isMobileChecker'
+import ForgotPasswordCover from "./components/ForgotPasswordCover"
+import ForgotPasswordForm from "./components/ForgotPasswordForm"
+import TradeMarkCopyRights from '../../components/TradeMarkCopyRights/TradeMarkCopyRights'
+import TopLogo from '../../components/TopLogo/TopLogo'
+import useMobileChecker from '../../utils/useMobileChecker'
 
 
-const LoginPage = () => {
+const ForgotPassword: FC = () => {
+  const isMobile = useMobileChecker();
 
-  const isMobile = isMobileChecker();
   return (
     <Row className="h-100 m-0">
       <Col className="d-none d-lg-flex align-items-center p-4 background-color-for-cover" lg="7" sm="12">
-        <LoginWelcomeCover />
+        <ForgotPasswordCover />
       </Col>
       <Col
         className="d-flex flex-column justify-content-center align-items-center auth-bg px-2 p-lg-5 h-100"
@@ -26,10 +26,10 @@ const LoginPage = () => {
         sm="12"
       >
         {/* Empty div to align space on top */}
-        <div className='h-25'></div>
+        <div className='h-25 mb-5'></div>
         <div className='w-100 h-50'>
           {isMobile && <TopLogo />}
-          <LoginInformationForm />
+          <ForgotPasswordForm />
         </div>
         <div className='h-25 w-100 flex-grow-1 d-flex align-items-end justify-content-center'>
           <TradeMarkCopyRights />
@@ -39,4 +39,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default ForgotPassword

@@ -1,10 +1,14 @@
-import React from 'react'
-import isMobileChecker from '../../utils/isMobileChecker'
+import React, { FC } from 'react'
+import useMobileChecker from '../../utils/useMobileChecker'
 
-import "./top-logo.css"
+import "./TopLogo.css"
 
-function TopLogo({ isCollapseNav }) {
-    const isMobile = isMobileChecker();
+interface Props {
+    isCollapseNav?: Boolean
+}
+
+const TopLogo: FC<Props> = ({ isCollapseNav }) => {
+    const isMobile: Boolean = useMobileChecker();
     return (
         <>
             {isMobile && !isCollapseNav &&
